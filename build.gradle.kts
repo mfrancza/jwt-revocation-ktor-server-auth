@@ -30,3 +30,11 @@ tasks.test {
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
 }
+
+publishing {
+    publications {
+        create<MavenPublication>("jwt-revocation-ktor-server-auth") {
+            from(components["java"])
+        }
+    }
+}
