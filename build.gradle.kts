@@ -13,6 +13,13 @@ version = "1.0.0"
 
 repositories {
     mavenLocal()
+    maven {
+        url = uri("https://maven.pkg.github.com/mfrancza/jwt-revocation-rules")
+        credentials {
+            username = System.getenv("USERNAME")
+            password = System.getenv("TOKEN")
+        }
+    }
     mavenCentral()
 }
 
