@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import java.net.URI
 
 val ktor_version = "2.2.2"
 
@@ -34,6 +35,18 @@ publishing {
     publications {
         create<MavenPublication>("jwt-revocation-ktor-server-auth") {
             from(components["java"])
+        }
+    }
+    publishing {
+        repositories {
+            maven {
+                name = "GitHubPackages"
+                url = URI("https://maven.pkg.github.com/mfrancza/jwt-revocation-ktor-server-auth")
+                credentials {
+                    username = System.getenv("USERNAME")
+                    password = System.getenv("TOKEN")
+                }
+            }
         }
     }
 }
