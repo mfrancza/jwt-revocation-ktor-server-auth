@@ -3,7 +3,7 @@ import java.net.URI
 val ktor_version = "2.3.2"
 
 plugins {
-    kotlin("jvm") version "1.8.0"
+    kotlin("jvm") version "1.9.0"
     id("maven-publish")
 }
 
