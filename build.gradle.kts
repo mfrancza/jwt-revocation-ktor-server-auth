@@ -1,7 +1,6 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import java.net.URI
 
-val ktor_version = "2.2.2"
+val ktor_version = "2.3.2"
 
 plugins {
     kotlin("jvm") version "1.8.0"
