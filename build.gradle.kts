@@ -7,7 +7,7 @@ plugins {
     id("maven-publish")
 }
 
-group = "com.mfrancza"
+group = "io.github.mfrancza"
 version = "1.1.0-SNAPSHOT"
 
 repositories {
