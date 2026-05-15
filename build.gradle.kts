@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "io.github.mfrancza"
-version = "1.1.0-SNAPSHOT"
+version = "1.1.0"
 
 repositories {
     mavenLocal()
@@ -23,7 +23,7 @@ repositories {
 }
 
 dependencies {
-    implementation("io.github.mfrancza:jwt-revocation-rules-jvm:1.2.0-SNAPSHOT")
+    implementation("io.github.mfrancza:jwt-revocation-rules-jvm:1.2.0")
     implementation("io.ktor:ktor-server-auth:$ktor_version")
     implementation("io.ktor:ktor-server-auth-jwt:$ktor_version")
     testImplementation(kotlin("test"))
