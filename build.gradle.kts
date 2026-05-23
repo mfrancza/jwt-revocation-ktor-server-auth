@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "io.github.mfrancza"
-version = "1.2.0-SNAPSHOT"
+version = "1.2.0"
 
 repositories {
     mavenLocal()
